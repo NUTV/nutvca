@@ -1,0 +1,139 @@
+BODY {
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif;
+	background: url(../images/backgrounds/pattern_02.gif) repeat fixed;
+}
+
+.container {
+			width: 700px;
+			\width: 720px;
+			w\idth: 700px;
+			border-top: none;
+			border: #BFBFBF 1px solid;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0 5px 2px 5px;
+			background: White;
+		}
+
+.header {
+			padding: 0;
+			margin-bottom: 5px;
+			background-color: white;
+			border-bottom: Gray 2px solid;
+		}
+
+.content {
+			padding: 0;
+			background-color: green;
+		}
+
+.sponsors {
+			clear: both;
+			padding: 0;
+			margin-top: 5px;
+			background-color: white;
+			text-align: center;
+			border: solid 1px silver; 
+		}
+		
+.footer {
+			clear: both;
+			padding: 2px;
+			margin-top: 5px;
+			background-color: gray;
+			text-align: right;
+			height: 12px;
+		}
+
+.col_left { 
+width:229px; 
+height:auto; 
+float:left; 
+background-color:transparent; 
+margin-right: 5px; 
+padding-top: 0; 
+padding-bottom: 0; 
+border-color: black; 
+border-width: thin; 
+}
+
+.col_middle { 
+background-color: transparent; 
+width: 231px; 
+height: auto; 
+float: left; 
+margin-top: 0; 
+margin-right: 5px; 
+margin-bottom: 5px; 
+padding: 0; 
+}
+
+.col_right { 
+background-color: transparent; 
+width: 200px; 
+height: auto; 
+float: left; 
+margin-right: 0; 
+margin-bottom: 5px; 
+}
+
+.col2_left { 
+background-color: transparent; 
+width: 494px; 
+height: auto; 
+float: left; 
+margin-right: 5px; 
+margin-bottom: 5px; 
+}
+
+
+.box_200px { 
+background-color: white; 
+background-image: url(../images/headers/header_200.gif); background-repeat: no-repeat; 
+background-position: center top; 
+width:auto; height: auto; 
+margin: 0 0 5px; 
+padding: 3px; 
+border: solid 1px gray; 
+ }
+
+.box_465px { 
+background-color: white; 
+background-image: url(../images/headers/header_465.gif); background-repeat: no-repeat; 
+background-position: center top; 
+width:auto; height: auto; 
+margin: 0 0 5px; 
+padding: 0 30px 0 10px; 
+border: solid 1px gray; 
+ }
+ 
+ img.padded {
+ 	padding: 10px 0 5px 10px;
+ }
+
+div.float {
+  float: left;
+background-color: #white; 
+border: 1px dashed #CCCCCC; 
+width: 150px;
+height: 200px;
+margin: 3px;
+  }
+  
+div.float p {
+   text-align: left;
+   }
+	
+	div.spacer {
+  clear: both;
+}
+
+.nutvsmallcolored
+{
+  text-align: center;
+  vertical-align: center;
+  margin-left: 15px;
+  margin-top: opx
+}

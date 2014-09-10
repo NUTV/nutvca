@@ -1,0 +1,129 @@
+  #navcontainer
+{
+margin: 0;
+padding: 0;
+height: 20px;
+background: #9c6;
+}
+
+#navcontainer ul
+{
+border: 0;
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: left;
+font-size: 10px;
+}
+
+#navcontainer ul li
+{
+display: block;
+float: left;
+text-align: left;
+padding: 0;
+margin: 0;
+}
+
+#navcontainer ul li a
+{
+background: #9c6;
+width: 100px;
+height: 18px;
+border-top: 1px solid #693;
+border-left: 1px solid #693;
+border-bottom: 1px solid #693;
+border-right: none;
+padding: 0 0 0 3px;
+margin: 0 0 0 0;
+color: #333;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+#navcontainer ul li a:hover
+{
+color: #fff;
+background: #693;
+}
+
+#navcontainer a:active
+{
+background: #c60;
+color: #fff;
+}
+
+#navcontainer li#active a
+{
+background: #c60;
+border: 1px solid #693;
+color: #fff;
+}
+
+#nav, #nav ul {
+	float: left;
+	list-style: none;
+	line-height: 1;
+	background: #693;
+	padding: 0;
+	border: none;
+	margin: 0 0 1em 0;
+}
+
+#navcontainer a {
+	display: block;
+	width: 10em;
+	w\idth: 6em;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.25em 2em;
+	border-bottom: none;
+}
+
+#nav ul li a:hover
+{
+color: #fff;
+background: #693;
+}
+
+#nav li {
+	float: left;
+	padding: 0;
+}
+
+#nav li ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 14.4em;
+	w\idth: 13.9em;
+	font-weight: normal;
+	border-width: 0.25em;
+	margin: 0;
+}
+
+#nav li li {
+	padding-right: 1em;
+}
+
+#nav li ul a {
+	width: 15em;
+	w\idth: 12em;
+}
+
+#nav li ul ul {
+	margin: 0 0 0 16em;
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+	left: auto;
+}
+
+#nav li:hover, #nav li.sfhover {
+	background: #693;
+}

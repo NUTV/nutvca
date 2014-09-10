@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.rightSubheadings {
+	color:white;
+	background:url(../images/box_header_background3.jpg); /*_right*/
+	background-repeat:no-repeat; /*wasnt there before*/
+	font-weight:bold;
+	font-size:14px;	
+	text-align:center;
+	height:26px; /*was 28*/
+	width:387px; /*was 390*/
+	padding-top:7px;
+	margin-left:-20px; /*was -10*/
+	border:1px black solid;	
+}

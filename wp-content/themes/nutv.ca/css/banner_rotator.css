@@ -1,0 +1,75 @@
+@CHARSET "ISO-8859-1";
+
+
+#bannerRotatorWrapper h1, #bannerRotatorWrapper h2, #bannerRotatorWrapper h3, #bannerRotatorWrapper p, #bannerRotatorWrapper div {
+font-family:helvetica,arial,sans-serif;
+font-size:12pt;
+}
+
+#bannerRotatorWrapper div, #bannerRotatorWrapper dl, #bannerRotatorWrapper dt, #bannerRotatorWrapper dd, #bannerRotatorWrapper ul, 
+#bannerRotatorWrapper ol, #bannerRotatorWrapper li, #bannerRotatorWrapper h1, #bannerRotatorWrapper h2, #bannerRotatorWrapper h3, 
+#bannerRotatorWrapper h4, #bannerRotatorWrapper h5, #bannerRotatorWrapper h6, #bannerRotatorWrapper pre, #bannerRotatorWrapper code, 
+#bannerRotatorWrapper form, #bannerRotatorWrapper fieldset, #bannerRotatorWrapper legend, #bannerRotatorWrapper input, 
+#bannerRotatorWrapper button, #bannerRotatorWrapper textarea, #bannerRotatorWrapper p, #bannerRotatorWrapper blockquote, 
+#bannerRotatorWrapper th, #bannerRotatorWrapper td, #bannerRotatorWrapper div > table {
+margin:0;
+padding:0;
+}
+
+#bannerRotatorWrapper {
+	width:868px;
+	height:345px;
+	position:relative;
+}
+#bannerRotatorWrapper a {
+	color:#000000;
+	text-decoration: none;
+}
+#bannerRotatorWrapper a:hover {
+	color:#333333;
+}
+#bannerRotatorWrapper td, #bannerRotatorWrapper th  {
+	font-family: arial, helvetica, sans-serif;
+}
+#flashContentWrapper {
+	float:left;
+	width:564px;
+	height:345px;
+}
+#showLinksWrapper {
+	float:right;
+	width:304px;
+	height:344px;
+}
+#showLinksTableWrapper {
+	border:0;
+	margin:0;
+	padding:0;
+}
+#showLinksTableWrapper table {
+	background:#ffffff url(../images/banner_rotator_table_bg_repeat.jpg) top repeat-x;
+	width:307px;
+	height:342px;
+	border:0;
+}
+#showLinksTableWrapper table thead tr th {
+	border-top:1px #ffffff solid;
+	border-bottom:1px #cac9c9 solid;
+	width:100px;
+	padding:0 10px 0 20px;
+}
+#showLinksTableWrapper table tr td {
+	background:url(../images/white_dot_repeat.jpg) repeat-x top left;	
+	border-bottom:1px #cac9c9 solid;
+	font-size: 11px;
+	padding:0 10px 0 0;
+}
+#showLinksTableWrapper table tr td.bulletPoint {
+	width:10px;
+	padding:0px 2px 0px 20px;
+	margin:0px;
+}
+#showLinksTableWrapper table tr td.bottom {
+	border-top:1px #ffffff solid;
+	border-bottom:1px #ffffff solid;
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+.rightSubheadings {
+	color:white;
+	background:repeat url(../images/subtitle_panel_repeat.jpg);
+	font-weight:bold;
+	font-size:14px;	
+	text-align:center;
+	height:27px;
+	padding-top:8px;
+}
+
+.rightInfo {
+	margin-bottom:0px;
+	color:#999999;
+	background-color:;
+	padding:10px;
+	font-size:12px;
+	line-height:15px;
+	letter-spacing:1px;
+}
+
+.rightItemBox {
+	background-color:;
+	padding:0px;
+	margin-bottom:10px;
+	width:363px;
+	position:relative;
+	left:-10px;
+}
+
+.left_images {
+	float:left;
+	display:block;
+	position:relative; 
+	left:-10px;
+	border:4px white solid;
+	margin-bottom:5px;
+}
+.wrap_text {}

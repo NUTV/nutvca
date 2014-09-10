@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#rightCol {margin-right:17px;}
+
+.footer_main_surround {
+	
+	height:122px;
+	
+	top:0px;
+	left:0px;
+	
+	
+}
+#footer_col_sites {
+	
+	line-height:8px;
+	height:122px;
+	top:5px;
+	left:40px;
+	
+}
+
+#footer_col_community {
+	
+	height:122px;
+	line-height:8px;
+	top:5px;
+	
+	}
+#footer_col_advertise {
+	height:122px;
+	line-height:8px;
+	top:5px;
+	left:290px;
+	
+}
+#footer_col_RSS {
+	line-height:8px;
+	top:5px;
+	left:420px;
+	height:122px;
+}

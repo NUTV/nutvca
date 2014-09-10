@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contest-list-wrapper {
+	margin-top:20px;
+	font-size:12px;
+}
+#contest-list-wrapper a {
+	color:#F30;
+}
+#contest-list-wrapper a:hover {
+	color:#F30;
+	text-decoration:underline;
+}
+#contest-list-wrapper h1 {
+	font-size:24px;
+	margin:0;
+	padding:0;
+	line-height:24px;
+}
+#contest-list-wrapper h2 {
+	line-height:18px;
+	margin:0;
+	padding:0;
+}
+.contest-wrapper {
+	margin:20px 0;
+}
+.contest-thumbnail-wrapper {
+	float:left;
+	width:200px;
+}
+.contest-thumbnail-wrapper .contest-thumbnail {
+	margin-left:15px;
+}
+.contest-text-wrapper{
+	float:right;
+	width:650px;
+	margin-right:25px;
+}
+.contest-text-wrapper table {
+	width:650px;
+	margin:0;
+	padding:0;
+}
+.contest-text-wrapper table td {
+	padding:5px 5px 5px 0;
+	margin:0;
+	font-style:italic;
+}
+.contest-text-wrapper table td.left-col {
+	width:100px;
+	font-style:normal;
+}
+#contest-list-wrapper .button-wrapper {
+	margin-top:10px;
+	margin-left:100px;
+}
+#contest-list-wrapper .button-wrapper a {
+	position:relative;
+	top:5px;
+	left:15px;
+}
+.clear-float {
+	clear:both;	
+}

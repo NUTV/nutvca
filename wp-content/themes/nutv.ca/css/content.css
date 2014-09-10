@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.rightSubheadings {
+	color:white;
+	
+	font-weight:bold;
+	font-size:14px;	
+	text-align:center;
+	height:26px;
+	padding-top:7px;
+	margin-left:-20px;
+	width:387px;
+	border-bottom:1px black solid;
+}
+
+.rightInfo {
+	margin-bottom:0px;
+	color:black;
+	background-color:#FFFFFF;
+	padding:3px;
+}
+
+.rightItemBox {
+	background-color:#FFFFFF;
+	padding:4px;
+	margin-bottom:10px;
+	width:363px;
+	position:relative;
+	left:-10px;
+}
+
+.rightHR {border-bottom: 3px white solid; width:100%; margin-top:5px; margin-bottom:5px;}
+
+.program_block {}
+
+.program_thumb {display:block; float:left; border: 1px black solid; padding:0; margin:0; height:144px;}
+
+.program_text {float:left; font-size:12px; width:250px; padding-left:20px;}
+
+.program_heading {font-weight:bold;}
+
+.show_thumb {float:left; border: 4px white solid; width:100px; height:100px;}
+
+.show_text {margin-left: 115px; color:black;}
+
+.show_header {font-weight:bold;}
+
+.show_subheader {font-size:12px; color:grey; position: relative; top:-5px;}
+
+.show_watchsubscribe {color:black; position:relative; top:30px;}
+
+.show_textadjust {position:relative; top:-8px; left:-3px;}
+
+.show_blurbtext {color:#999999; font-size:12px; margin-top:10px; margin-bottom:10px;}

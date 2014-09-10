@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contest-form {
+	margin-top:10px;
+	font-size:12px;
+}
+#contest-form a {
+	color:#00F;
+}
+#contest-form a:hover {
+	color:#009;
+}
+#contest-form .share-links {
+	padding:10px;
+}
+#contest-form table {
+	width:870px;
+}
+#contest-form td {
+	padding:5px;
+}
+#contest-form .validation-advice {
+	color:#F00;
+}
+#contest-form .return-to-contests {
+	margin:10px 0 0 10px;
+}
