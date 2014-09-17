@@ -1,0 +1,55 @@
+<?php
+/**
+ * The header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="content">
+ *
+ * @package nutv2014
+ */
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><?php wp_title( '|', true, 'right' ); ?></title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+
+	<section class="main-navigation">
+        <nav>
+            <ul>
+                <li><a href="/project/">home</a></li>
+                <li><a href="/project/wanna-make-tv">join</a></li>
+                <li><a href="/project/advertise">advertise</a></li>
+                <li><a href="/project/shows">shows</a></li>
+                <li><a href="/project/contact">contact</a></li>
+                <li><a href="/project/members">member area</a></li>
+            </ul>
+        </nav>
+    </section>
+
+	<section id="content" class="main-page-content">
+
+        <aside class="right">
+            <section class="nutv-color-bar-chart">
+                <div class="light-purple"></div>
+                <div class="purple"></div>
+                <div class="light-blue"></div>
+                <div class="blue"></div>
+                <span class="clear block"></span>
+                <div class="logo">
+                    <h2>nutv.ca</h2>
+                    <h3>New University Television</h3>
+                </div>
+                <div class="green"></div>
+                <div class="light-green"></div>
+                <div class="yellow"></div>
+                <div class="orange"></div>
+                <span class="clear block"></span>
+            </section>
+        </aside>
