@@ -40,8 +40,6 @@ h2 {
 
 .main-navigation ul {
     height:65px;
-    margin:0 auto;
-    width:1120px;
 }
 
 .main-navigation ul li a {
@@ -63,8 +61,6 @@ h2 {
 
 .main-page-content {
   position: relative;
-  width:1120px;
-  margin:0 auto;
 }
 
 .main-page-content section.left {
@@ -94,6 +90,41 @@ h2 {
 .hide {
   display:none;
 }
+.contain {
+  margin:0 auto;
+  width:1120px;
+}
+
+/*
+ * Contact Page 
+ */
+
+.staff-member {
+  width: 33.3333%;
+  height: 300px;
+  text-align: center;
+  position: relative;
+}
+.staff-member-img {
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: #293436;
+}
+.staff-member:hover .staff-member-img {
+  display: none;
+}
+.staff-member p {
+  font-size: 0.7em;
+}
+
+
+/* 
+ * Shows  
+ */
 
 .show-title, .episode-title, .main-title {
   padding:25px 0;
