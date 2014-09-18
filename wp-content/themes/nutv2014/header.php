@@ -21,19 +21,19 @@
 <body <?php body_class(); ?>>
 
 	<section class="main-navigation">
-        <nav>
+        <nav class="contain">
             <ul>
                 <li><a href="/project/">home</a></li>
-                <li><a href="/project/wanna-make-tv">join</a></li>
-                <li><a href="/project/advertise">advertise</a></li>
                 <li><a href="/project/shows">shows</a></li>
+                <li><a href="/project/events">events</a></li>
+                <li><a href="/project/wanna-make-tv">join</a></li>
                 <li><a href="/project/contact">contact</a></li>
                 <li><a href="/project/members">member area</a></li>
             </ul>
         </nav>
     </section>
 
-	<section id="content" class="main-page-content">
+	<section id="content" class="main-page-content contain">
 
         <aside class="right">
             <section class="nutv-color-bar-chart">
