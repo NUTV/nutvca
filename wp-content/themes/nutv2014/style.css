@@ -42,6 +42,13 @@ figure {
   font-size: 0.8em;
 }
 
+article.page {
+  min-height: 250px;
+}
+footer.entry-footer {
+  display: none;
+}
+
 .main-navigation {
     background-color:#000;
     height:65px;
@@ -106,6 +113,7 @@ figure {
   margin:0 auto;
   width:1120px;
 }
+
 
 /*
  * Contact Page 
