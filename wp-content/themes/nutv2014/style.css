@@ -1,6 +1,6 @@
 /* RESET */
 
-a, h1, h2 ,h3, ul, ul li, li, button, img, div, embed, object{
+a, ul, ul li, li, button, img, div, embed, object{
   padding:0;
   margin:0;
   border:none;
@@ -10,6 +10,7 @@ a, h1, h2 ,h3, ul, ul li, li, button, img, div, embed, object{
 
 a {
   text-decoration: none;
+  color:#06beda;
 }
 
 html, body, ul {
@@ -18,7 +19,7 @@ html, body, ul {
     padding:0;
 }
 
-html, body {
+body {
   background-color:#293436;
   color:#fff;
   line-height:24px;
@@ -29,8 +30,16 @@ header {
   position: relative;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
   color:#06beda;
+  font-weight: normal;
+}
+h1 {
+  font-size: 32px;
+}
+
+figure {
+  font-size: 0.8em;
 }
 
 .main-navigation {
@@ -51,6 +60,9 @@ h2 {
     display:inline-block;
     vertical-align: middle;
     line-height:65px;
+}
+.main-navigation ul li a:hover {
+  color: #b3c4cc;
 }
 .main-navigation ul li {
     list-style-type:none;
