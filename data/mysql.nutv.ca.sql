@@ -150,8 +150,8 @@ LOCK TABLES `wp_options` WRITE;
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`)
 VALUES
-	(1,'siteurl','http://192.168.33.10/project','yes'),
-	(2,'blogname','192.168.33.10/project','yes'),
+	(1,'siteurl','http://192.168.33.10','yes'),
+	(2,'blogname','192.168.33.10','yes'),
 	(3,'blogdescription','Campus Community Television','yes'),
 	(4,'users_can_register','1','yes'),
 	(5,'admin_email','digitalsadhu@gmail.com','yes'),
@@ -185,7 +185,7 @@ VALUES
 	(34,'blog_charset','UTF-8','yes'),
 	(35,'moderation_keys','','no'),
 	(36,'active_plugins','a:7:{i:0;s:29:\"NUTV_Widgets/NUTV_Widgets.php\";i:1;s:37:\"Sidebar_Selector/Sidebar_Selector.php\";i:2;s:60:\"contact-form-7-dynamic-text-extension/wpcf7_dynamic_text.php\";i:3;s:36:\"contact-form-7/wp-contact-form-7.php\";i:4;s:54:\"facebook-social-plugin-widgets/facebook-sp-widgets.php\";i:5;s:51:\"facebook-social-widgets/facebook-social-widgets.php\";i:6;s:51:\"twitter-goodies-widgets/twitter-goodies-widgets.php\";}','yes'),
-	(37,'home','http://192.168.33.10/project','yes'),
+	(37,'home','http://192.168.33.10','yes'),
 	(38,'category_base','','yes'),
 	(39,'ping_sites','http://rpc.pingomatic.com/','yes'),
 	(40,'advanced_edit','0','yes'),
