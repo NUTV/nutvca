@@ -12,7 +12,7 @@
 
 	<footer class="site-footer clear contain" role="contentinfo">
 
-		<p>Footer</p>
+		<!-- <p>Footer</p> -->
 
 	</footer><!-- #colophon -->
 </section><!-- #page -->
