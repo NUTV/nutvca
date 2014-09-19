@@ -7,6 +7,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 
+		<h1><?php the_title();?></h1>
+
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php new_posted_on(); ?>
@@ -15,7 +17,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
+ 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
 				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'new' ), 
@@ -23,12 +25,6 @@
 			) );
 		?>
 
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'new' ),
-				'after'  => '</div>',
-			) );
-		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
