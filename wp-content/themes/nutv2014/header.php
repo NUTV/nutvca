@@ -23,12 +23,12 @@
 	<section class="main-navigation">
         <nav class="contain">
             <ul>
-                <li><a href="/project/">home</a></li>
-                <li><a href="/project/shows">shows</a></li>
-                <li><a href="/project/events">events</a></li>
-                <li><a href="/project/wanna-make-tv">join</a></li>
-                <li><a href="/project/contact">contact</a></li>
-                <li><a href="/project/members">member area</a></li>
+                <li><a href="/">home</a></li>
+                <li><a href="/shows">shows</a></li>
+                <!--<li><a href="/events">events</a></li>-->
+                <li><a href="/wanna-make-tv">join</a></li>
+                <li><a href="/contact">contact</a></li>
+                <li><a href="/members">member area</a></li>
             </ul>
         </nav>
     </section>
