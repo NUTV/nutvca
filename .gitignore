@@ -2,8 +2,9 @@
 tmp
 wp-admin
 wp-includes
-index.php
 license.txt
 readme.html
 wp-*.php
 xmlrpc.php
+.htaccess
+/index.php
