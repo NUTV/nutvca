@@ -14,10 +14,15 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<?php wp_head(); ?>
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<?php wp_head(); ?>
+<?php if (is_front_page()): ?>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-ec86d19d-80cf-b941-a3eb-c412bde63c31", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
+<?php endif; ?>
 </head>
 
 <body <?php body_class(); ?>>
