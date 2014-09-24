@@ -33,10 +33,9 @@ query_posts(array('numberposts' => -1,
 
 if (have_posts()) : while (have_posts()) : the_post(); ?>
               
-    <div class="staff-member left">
+    <div class="staff-member left member-list">
 
         <div class="staff-member-img">
-            <br><br>
             <h2><?php the_title(); ?></h2>
         </div>
        
@@ -59,10 +58,9 @@ query_posts(array('numberposts' => -1,
 
 if (have_posts()) : while (have_posts()) : the_post(); ?>
               
-    <div class="staff-member left">
+    <div class="staff-member left member-list">
 
         <div class="staff-member-img">
-            <br><br>
             <h2><?php the_title(); ?></h2>
         </div>
        
@@ -93,8 +91,8 @@ if (have_posts()) : while (have_posts()) : the_post();
 
     	<?php if(has_post_thumbnail()) {
     	
-            echo '<div class="staff-member-img">';
-        	the_post_thumbnail(array(250,250));
+          echo '<div class="staff-member-img">';
+        	the_post_thumbnail(array(200,200));
         	echo '</div>';
 
         };?>
