@@ -123,10 +123,14 @@ footer.entry-footer {
  */
 
 .staff-member {
-  width: 33.3333%;
-  height: 300px;
+  width: 30%;
+  height: 350px;
   text-align: center;
   position: relative;
+  margin: 1.5%;
+}
+.member-list h2 {
+  margin-top: 75px;
 }
 .staff-member-img {
   position: absolute;
@@ -135,7 +139,8 @@ footer.entry-footer {
   bottom: 0;
   left: 0;
   display: block;
-  background-color: #293436;
+  background-color: #1a2426;
+  padding-top: 75px; 
 }
 .staff-member:hover .staff-member-img {
   display: none;
