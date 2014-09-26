@@ -117,6 +117,19 @@ footer.entry-footer {
   width:1120px;
 }
 
+/* Join Page */
+
+input.paypal {
+  border:0;
+  background-color:#06beda;
+  color:#fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  cursor:pointer;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance: none;
+}
 
 /*
  * Contact Page 
