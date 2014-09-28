@@ -22,6 +22,10 @@ html, body, ul {
     padding:0;
 }
 
+ul.unstyled {
+  list-style: none;
+}
+
 body {
   background-color:#293436;
   color:#fff;
@@ -86,7 +90,7 @@ footer.entry-footer {
 }
 
 .main-page-content section.left {
-  width:745px;
+  width:780px;
 }
 
 .main-page-content aside.right {
@@ -116,6 +120,37 @@ footer.entry-footer {
   margin:0 auto;
   width:1120px;
 }
+
+/*
+ * Events Page 
+ */
+
+aside.event-categories {
+  width: 180px;
+}
+
+ul.events li {
+  color: #91a2aa;
+  margin: 10px 0;
+}
+
+ul.events li.active {
+  color: #fff;
+}
+
+section.event-articles {
+  width: 600px;
+  min-height: 450px;
+}
+
+section.event-articles article {
+  padding: 10px 25px;
+}
+
+section.event-articles article.odd {
+  background-color: #1a2426;
+}
+
 
 /* Join Page */
 

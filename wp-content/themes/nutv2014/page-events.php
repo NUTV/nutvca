@@ -14,11 +14,43 @@ get_header(); ?>
 
 <section class="left">
 
-<?php while ( have_posts() ) : the_post(); ?>
+	<h2>Upcoming Events</h2>
 
-	<?php get_template_part( 'content', 'page' ); ?>
+	<aside class="event-categories left">
 
-<?php endwhile; // end of the loop. ?>
+		<ul class="events unstyled">
+			<li class="active">Greenlite</li>
+			<li>Another Event</li>
+		</ul>
+	</aside>
+
+	<section class="event-articles right">
+
+		<article class="event odd">
+			<h5 class="right">28 September 2014</h5>
+			<h3>Some event</h3>
+			
+			<p>Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. 
+			   Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. </p>
+		</article>
+
+		<article class="event">
+			<h5 class="right">28 September 2014</h5>
+			<h3>Some event</h3>
+			
+			<p>Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. 
+			   Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. </p>
+		</article>
+
+		<article class="event odd">
+			<h5 class="right">28 September 2014</h5>
+			<h3>Some event</h3>
+			
+			<p>Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. 
+			   Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. </p>
+		</article>
+
+	</section>
 
 </section>
 
