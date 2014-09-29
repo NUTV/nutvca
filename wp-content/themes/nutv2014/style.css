@@ -126,18 +126,28 @@ footer.entry-footer {
  */
 
 aside.event-categories {
-  width: 180px;
+  width: 170px;
 }
 
 ul.events li {
-  color: #91a2aa;
-  margin: 10px 0;
+  padding:10px;
 }
 
 ul.events li.active {
-  color: #fff;
+  background-color: #1a2426;
 }
-
+ul.events li a {
+  color: #b3c4cc;
+  display: block;
+  width:100%;
+  height:100%;
+}
+ul.events li a:hover {
+  color: #06beda;
+}
+ul.events li.active a {
+  color: #06beda;
+}
 section.event-articles {
   width: 600px;
   min-height: 450px;
