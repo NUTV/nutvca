@@ -49,9 +49,11 @@ figure {
   font-size: 0.8em;
 }
 
-article.page {
+article.page,
+article.nutv_events {
   min-height: 250px;
 }
+
 footer.entry-footer {
   display: none;
 }
