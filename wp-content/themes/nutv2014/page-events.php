@@ -1,11 +1,7 @@
  <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying Events.
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
  *
  * @package nutv2014
  */
@@ -20,19 +16,23 @@ get_header(); ?>
 
 		<ul class="events unstyled">
 
-		 <?php 
+		<?php 
+		
 		$args = array('taxonomy'   => 'nutv_event_category',
 					  'hide_empty' => 1); 
 
 		$event_categories=get_categories($args);
+
 		foreach ($event_categories as $event_category) : ?>
-			<li class="<?php if ($event_category->slug == $_GET['event_cat']) echo 'active'; ?>">
+
+			<li<?php if ($event_category->slug == $_GET['event_cat']) echo ' class="active"'; ?>>
 				<a href="/events/?event_cat=<?php echo $event_category->slug;?>"><?php echo $event_category->name;?></a>
 			</li>
+
 		<?php endforeach; ?>
 				
-
 		</ul>
+
 	</aside>
 
 	<section class="event-articles right">
@@ -46,12 +46,13 @@ get_header(); ?>
 	);
 
 	if (!empty($_GET['event_cat'])) {
-		
+
 		$args['tax_query'] = array(
-			array('taxonomy' => 'nutv_event_category',
-				  'field'    => 'slug',
-				  'terms'    => $_GET['event_cat']
-				)
+			array(
+				'taxonomy' => 'nutv_event_category',
+				'field'    => 'slug',
+				'terms'    => $_GET['event_cat']
+			)
 		);
 	}
 
