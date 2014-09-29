@@ -19,36 +19,60 @@ get_header(); ?>
 	<aside class="event-categories left">
 
 		<ul class="events unstyled">
-			<li class="active">Greenlite</li>
-			<li>Another Event</li>
+
+		 <?php 
+		$args = array('taxonomy'   => 'nutv_event_category',
+					  'hide_empty' => 1); 
+
+		$event_categories=get_categories($args);
+		foreach ($event_categories as $event_category) : ?>
+			<li class="<?php if ($event_category->slug == $_GET['event_cat']) echo 'active'; ?>">
+				<a href="/events/?event_cat=<?php echo $event_category->slug;?>"><?php echo $event_category->name;?></a>
+			</li>
+		<?php endforeach; ?>
+				
+
 		</ul>
 	</aside>
 
 	<section class="event-articles right">
 
-		<article class="event odd">
-			<h5 class="right">28 September 2014</h5>
-			<h3>Some event</h3>
-			
-			<p>Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. 
-			   Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. </p>
-		</article>
+	<?php
+	
+	$args = array(
+		'numberposts' => -1,
+	    'order'       => 'ASC',
+	    'post_type'   => 'nutv_events'
+	);
 
-		<article class="event">
-			<h5 class="right">28 September 2014</h5>
-			<h3>Some event</h3>
-			
-			<p>Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. 
-			   Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. </p>
-		</article>
+	if (!empty($_GET['event_cat'])) {
+		
+		$args['tax_query'] = array(
+			array('taxonomy' => 'nutv_event_category',
+				  'field'    => 'slug',
+				  'terms'    => $_GET['event_cat']
+				)
+		);
+	}
 
-		<article class="event odd">
-			<h5 class="right">28 September 2014</h5>
-			<h3>Some event</h3>
-			
-			<p>Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. 
-			   Some stuff about the event, something about a curry, hipsters and bacon. All described in faux latin. </p>
-		</article>
+	// show events
+	query_posts($args);
+
+	$event_count = 1;
+
+	if (have_posts()) : while (have_posts()) : the_post(); ?>
+	              
+	    <article class="event <?php if ($event_count++ % 2 !== 0) echo 'odd';?>" data-category="<?php echo $category; ?>">
+
+	    	<h5 class="right"><?php echo get_post_meta($post->ID, 'nutv-event-date', true); ?></h5>
+	        
+	        <h3><?php the_title(); ?></h3> 
+
+	        <p><?php the_content(); ?></p>
+
+	    </article>
+	              
+	<?php endwhile; endif; ?>
 
 	</section>
 
