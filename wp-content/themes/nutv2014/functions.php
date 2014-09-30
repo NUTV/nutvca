@@ -598,3 +598,146 @@ function nutv_staff_save_link( $post_id ){
 /*******************************************************************************
  * /Staff Custom Post Type
  ******************************************************************************/
+/*******************************************************************************
+ * Events custom post type
+ ******************************************************************************/
+function nutv_events() {
+  
+  $labels = array(
+    'name'              => 'Events',
+    'singular_name'     => 'Event',
+    'add_new'           => 'Add New Event',
+    'add_new_item'      => 'Add New Event',
+    'edit_item'         => 'Edit Event',
+    'new_item'          => 'New Event',
+    'all_items'         => 'All Events',
+    'view_item'         => 'View Event',
+    'search_items'      => 'Search Events',
+    'not_found'         => 'No Events found',
+    'not_found_in_trash'=> 'No Events found in Trash', 
+    'parent_item_colon' => '',
+    'menu_name'         => 'Events'
+  );
+  
+  $args = array(
+      'labels' => $labels,
+      'supports' => array('title','thumbnail','editor'),
+      'public' => true
+  );
+  
+  register_post_type('nutv_events', $args);
+}
+
+add_action('init', 'nutv_events');
+
+//Custom fields for Events ------------------------------------------------------
+/* Define the custom box */
+
+add_action( 'add_meta_boxes', 'nutv_events_add_custom_box' );
+
+/* Do something with the data entered */
+add_action( 'save_post', 'nutv_event_save_postdata' );
+
+
+/* Adds a box to the main column on the Post and Page edit screens */
+function nutv_events_add_custom_box() {
+    add_meta_box( 
+        'nutv-event-date-box',
+        'Event Date',
+        'nutv_event_date_custom_box',
+        'nutv_events' 
+    );
+}
+
+
+/* Prints the box content */
+function nutv_event_date_custom_box( $post ) {
+
+  // Use nonce for verification
+  wp_nonce_field( plugin_basename( __FILE__ ), 'nutv_event_nonce' );
+
+  $meta_key = 'nutv-event-date';
+  $meta_value = get_post_meta( $post->ID, $meta_key, true );
+  
+  // The actual fields for data entry
+  echo '<input type="text" id="'.$meta_key.'" name="'.$meta_key.'" value="'.$meta_value.'" size="85" />';
+}
+
+/* When the post is saved, saves our custom data */
+function nutv_event_save_postdata( $post_id ) {
+  // verify if this is an auto save routine. 
+  // If it is our form has not been submitted, so we dont want to do anything
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+      return;
+
+  // verify this came from the our screen and with proper authorization,
+  // because save_post can be triggered at other times
+
+  if ( !wp_verify_nonce( $_POST['nutv_event_nonce'], plugin_basename( __FILE__ ) ) )
+      return;
+
+  
+  // Check permissions
+  if ( 'nutv_events' != $_POST['post_type'] ) 
+      return;
+    
+  
+  if ( !current_user_can( 'edit_post', $post_id ) )
+      return;
+  
+  nutv_event_save_date( $post_id );
+
+}
+
+function event_save_field( $post_id,$meta_key,$meta_value,$new_meta_value ){
+  if ( $new_meta_value && '' == $meta_value ) {
+    add_post_meta( $post_id, $meta_key, $new_meta_value, true );
+  }
+  /* If the new meta value does not match the old value, update it. */
+  elseif ( $new_meta_value && $new_meta_value != $meta_value ) {
+    update_post_meta( $post_id, $meta_key, $new_meta_value );
+  }
+  /* If there is no new meta value but an old value exists, delete it. */
+  elseif ( '' == $new_meta_value && $meta_value ) {
+    delete_post_meta( $post_id, $meta_key, $meta_value );
+  }
+}
+
+function nutv_event_save_date( $post_id ){
+  $meta_key = 'nutv-event-date';
+  $new_meta_value = $_POST['nutv-event-date'];
+  $meta_value = get_post_meta( $post_id, $meta_key, true );
+  event_save_field( $post_id,$meta_key,$meta_value,$new_meta_value );
+}
+
+/*******************************************************************************
+ * /Events Custom Post Type
+ ******************************************************************************/
+
+// Custom Taxonomy
+function add_custom_taxonomies() {
+  // Add new "Locations" taxonomy to Posts
+  register_taxonomy('nutv_event_category', 'nutv_events', array(
+    // Hierarchical taxonomy (like categories)
+    'hierarchical' => true,
+    // This array of options controls the labels displayed in the WordPress Admin UI
+    'labels' => array(
+      'name' => _x( 'Event Categories', 'taxonomy general name' ),
+      'singular_name' => _x( 'Event Category', 'taxonomy singular name' ),
+      'search_items' =>  __( 'Search Categories' ),
+      'all_items' => __( 'All Categories' ),
+      'edit_item' => __( 'Edit Category' ),
+      'update_item' => __( 'Update Category' ),
+      'add_new_item' => __( 'Add New Category' ),
+      'new_item_name' => __( 'New Category Name' ),
+      'menu_name' => __( 'Event Categories' ),
+    ),
+    // Control the slugs used for this taxonomy
+    'rewrite' => array(
+      'slug' => 'event_categories', // This controls the base slug that will display before each term
+      'with_front' => false, // Don't display the category base before "/locations/"
+      'hierarchical' => false // This will allow URL's like "/locations/boston/cambridge/"
+    ),
+  ));
+}
+add_action( 'init', 'add_custom_taxonomies', 0 );

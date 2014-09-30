@@ -22,6 +22,10 @@ html, body, ul {
     padding:0;
 }
 
+ul.unstyled {
+  list-style: none;
+}
+
 body {
   background-color:#293436;
   color:#fff;
@@ -45,9 +49,11 @@ figure {
   font-size: 0.8em;
 }
 
-article.page {
+article.page,
+article.nutv_events {
   min-height: 250px;
 }
+
 footer.entry-footer {
   display: none;
 }
@@ -86,7 +92,7 @@ footer.entry-footer {
 }
 
 .main-page-content section.left {
-  width:745px;
+  width:780px;
 }
 
 .main-page-content aside.right {
@@ -116,6 +122,47 @@ footer.entry-footer {
   margin:0 auto;
   width:1120px;
 }
+
+/*
+ * Events Page 
+ */
+
+aside.event-categories {
+  width: 170px;
+}
+
+ul.events li {
+  padding:10px;
+}
+
+ul.events li.active {
+  background-color: #1a2426;
+}
+ul.events li a {
+  color: #b3c4cc;
+  display: block;
+  width:100%;
+  height:100%;
+}
+ul.events li a:hover {
+  color: #06beda;
+}
+ul.events li.active a {
+  color: #06beda;
+}
+section.event-articles {
+  width: 600px;
+  min-height: 450px;
+}
+
+section.event-articles article {
+  padding: 10px 25px;
+}
+
+section.event-articles article.odd {
+  background-color: #1a2426;
+}
+
 
 /* Join Page */
 
