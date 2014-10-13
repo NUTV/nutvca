@@ -92,7 +92,7 @@ if (have_posts()) : while (have_posts()) : the_post();
     	<?php if(has_post_thumbnail()) {
     	
           echo '<div class="staff-member-img">';
-        	the_post_thumbnail(array(200,200));
+        	the_post_thumbnail(array(250,250));
         	echo '</div>';
 
         };?>
@@ -100,9 +100,9 @@ if (have_posts()) : while (have_posts()) : the_post();
         <h2><?php the_title(); ?></h2>
         
         <?php 
-            if(!empty($title)) echo '<h4>'.$title.'</h4>';
-            if(!empty($landline)) echo '<p>Landline: '.$landline.'</p>';
-            if(!empty($email)) echo '<p>Email: <a href="mailto:'.$email.'">'.$email.'</a></p>';
+            if(!empty($title)) echo '<h4 class="job">'.$title.'</h4>';
+            if(!empty($landline)) echo '<p class="contact">Landline: '.$landline.'</p>';
+            if(!empty($email)) echo '<p class="contact">Email: <a href="mailto:'.$email.'">'.$email.'</a></p>';
         ?>
 
         <div><?php the_content();?></div>

@@ -209,6 +209,9 @@ input.paypal {
 .member-list h2 {
   margin-top: 75px;
 }
+div.member-list p {
+  font-size: 14px;
+}
 .staff-member-img {
   position: absolute;
   top:0;
@@ -217,13 +220,19 @@ input.paypal {
   left: 0;
   display: block;
   background-color: #1a2426;
-  padding-top: 75px; 
+  padding-top: 50px; 
 }
 .staff-member:hover .staff-member-img {
   display: none;
 }
+.staff-member h4.job {
+  margin: 5px 0;
+}
+.staff-member p.contact {
+  margin: 0;
+}
 .staff-member p {
-  font-size: 0.7em;
+  font-size: 14px;
 }
 
 
