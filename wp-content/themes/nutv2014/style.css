@@ -175,6 +175,14 @@ article.event img {
 
 /* Join Page */
 
+a.blue-box {
+  border:0;
+  background-color:#06beda;
+  color:#fff;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
 input.paypal {
   border:0;
   background-color:#06beda;
