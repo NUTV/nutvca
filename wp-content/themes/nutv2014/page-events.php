@@ -10,32 +10,19 @@ get_header(); ?>
 
 <section class="left">
 
-	<h2>Upcoming Events</h2>
-
 	<aside class="event-categories left">
 
-		<ul class="events unstyled">
+		<h3>Special Events</h3>
 
-		<?php 
-		
-		$args = array('taxonomy'   => 'nutv_event_category',
-					  'hide_empty' => 1); 
-
-		$event_categories=get_categories($args);
-
-		foreach ($event_categories as $event_category) : ?>
-
-			<li<?php if ($event_category->slug == $_GET['event_cat']) echo ' class="active"'; ?>>
-				<a href="/events/?event_cat=<?php echo $event_category->slug;?>"><?php echo $event_category->name;?></a>
-			</li>
-
-		<?php endforeach; ?>
-				
+		<ul class="unstyled">
+			<li><a href="/greenlite">Greenlite</a></li>
 		</ul>
 
 	</aside>
 
 	<section class="event-articles right">
+
+		<h2>Upcoming Events</h2>
 
 	<?php
 	
@@ -44,17 +31,6 @@ get_header(); ?>
 	    'order'       => 'ASC',
 	    'post_type'   => 'nutv_events'
 	);
-
-	if (!empty($_GET['event_cat'])) {
-
-		$args['tax_query'] = array(
-			array(
-				'taxonomy' => 'nutv_event_category',
-				'field'    => 'slug',
-				'terms'    => $_GET['event_cat']
-			)
-		);
-	}
 
 	// show events
 	query_posts($args);
