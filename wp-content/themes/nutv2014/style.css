@@ -131,34 +131,34 @@ section.social-media-links {
 }
 section.social-media-links a {
   display: inline-block;
-  width: 32px;
-  height: 32px;
-  margin: 0 10px;
-  background: url(img/social-media-logos-rund.png);
+  width: 54px;
+  height: 54px;
+  margin: 0 3px;
+  background: url(img/social-media-sprite.png);
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
 section.social-media-links a.sm-facebook:hover {
-  background-position: 0 -32px;
+  background-position: 0 -54px;
 }
 section.social-media-links a.sm-twitter {
-  background-position: -32px 0;
+  background-position: -54px 0;
 }
 section.social-media-links a.sm-twitter:hover {
-  background-position: -32px -32px;
+  background-position: -54px -54px;
 }
 section.social-media-links a.sm-youtube {
-  background-position: -64px 0;
+  background-position: -108px 0;
 }
 section.social-media-links a.sm-youtube:hover {
-  background-position: -64px -32px;
+  background-position: -108px -54px;
 }
 section.social-media-links a.sm-plus {
-  background-position: -96px 0;
+  background-position: -162px 0;
 }
 section.social-media-links a.sm-plus:hover {
-  background-position: -96px -32px;
+  background-position: -162px -54px;
 }
 /*
  * Events Page 
