@@ -8,3 +8,4 @@ wp-*.php
 xmlrpc.php
 .htaccess
 /index.php
+*/.DS_Store
