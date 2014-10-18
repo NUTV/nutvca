@@ -33,12 +33,16 @@ get_header( 'home' );
 		foreach ($sponsors as $sponsor) {
 			
 			echo '<a href="'.$sponsor->link_url.'" target="'.$sponsor->link_target.'">';
+
 			if ($sponsor->link_image !== '') {
-				echo '<img src="'.$sponsor->link_image.'" />';
+
+				echo '<img src="'.$sponsor->link_image.'" /></a>';
+
 			} else {
-				echo $sponsor->link_name;
+
+				echo $sponsor->link_name.'</a><br>';
+
 			}
-			echo '</a>';
 		}
 
 		echo '</div>';
