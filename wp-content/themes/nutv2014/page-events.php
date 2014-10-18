@@ -23,7 +23,7 @@ get_header(); ?>
 				)); 
 
 				foreach ($bookmarks as $bookmark) {
-					echo '<li><a href="'.$bookmark->link_url.'">'.$bookmark->link_name.'</a></li>';
+					echo '<li><a href="'.$bookmark->link_url.'" target="'.$bookmark->link_target.'">'.$bookmark->link_name.'</a></li>';
 				}
 			?>
 			
