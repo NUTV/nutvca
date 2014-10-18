@@ -15,7 +15,18 @@ get_header(); ?>
 		<h3>Special Events</h3>
 
 		<ul class="unstyled">
-			<li><a href="/greenlite">Greenlite</a></li>
+
+			<?php
+
+				$bookmarks = get_bookmarks(array(
+					'category_name' => 'Special Events'
+				)); 
+
+				foreach ($bookmarks as $bookmark) {
+					echo '<li><a href="'.$bookmark->link_url.'">'.$bookmark->link_name.'</a></li>';
+				}
+			?>
+			
 		</ul>
 
 	</aside>
