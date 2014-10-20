@@ -24,12 +24,14 @@ get_header(); ?>
 
 <?php 
 
-// // show board of directors
-query_posts(array('numberposts' => -1,
-                  'order'       => 'ASC',
-                  'post_type'   => 'nutv_staff',
-                  'meta_key'    => 'nutv-staff-type', 
-                  'meta_value'  => 'board-of-directors' )); 
+// show board of directors
+query_posts(array(
+  'posts_per_page' => -1,
+  'order'          => 'ASC',
+  'post_type'      => 'nutv_staff',
+  'meta_key'       => 'nutv-staff-type', 
+  'meta_value'     => 'board-of-directors' 
+)); 
 
 if (have_posts()) : while (have_posts()) : the_post(); ?>
               
@@ -73,11 +75,14 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 endwhile; endif; 
 
 // show staff member elements
-query_posts(array('numberposts' => -1,
-                  'order'       => 'ASC',
-                  'post_type'   => 'nutv_staff',
-                  'meta_key'    => 'nutv-staff-type', 
-                  'meta_value'  => 'staff' )); 
+query_posts(array(
+  'posts_per_page' => -1,
+  'numberposts'    => -1,
+  'order'          => 'ASC',
+  'post_type'      => 'nutv_staff',
+  'meta_key'       => 'nutv-staff-type', 
+  'meta_value'     => 'staff' 
+)); 
 
 if (have_posts()) : while (have_posts()) : the_post(); 
 
