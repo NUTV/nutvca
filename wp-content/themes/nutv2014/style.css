@@ -167,6 +167,11 @@ section.event-articles article.odd {
   background-color: #1a2426;
 }
 
+article.event img {
+  max-width: 100%;
+  height:auto;
+}
+
 
 /* Join Page */
 
