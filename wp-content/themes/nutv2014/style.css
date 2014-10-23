@@ -101,7 +101,11 @@ footer.entry-footer {
   top: -65px;
 }
 
-
+#sponsors img {
+  max-width: 780px;
+  display: block;
+  margin: 0 auto;
+}
 
 .left {
     float:left;
