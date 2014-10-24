@@ -40,7 +40,7 @@ get_header( 'home' );
 
 			} else {
 
-				echo $sponsor->link_name.'</a><br>';
+				echo '<span>'.$sponsor->link_name.'</span></a><br>';
 
 			}
 		}
