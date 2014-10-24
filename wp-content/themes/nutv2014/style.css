@@ -102,9 +102,16 @@ footer.entry-footer {
 }
 
 #sponsors img {
-  max-width: 780px;
-  display: block;
-  margin: 0 auto;
+  width: auto;
+  height:90px;
+  vertical-align: middle;
+}
+#sponsors span {
+
+  line-height: 90px;
+
+  white-space: nowrap;
+  padding: 0 10px;
 }
 
 .left {
