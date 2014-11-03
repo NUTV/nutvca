@@ -359,28 +359,19 @@ div.member-list p {
 .nutv-color-bar-chart .orange {background-color:#f7a446;}
 .nutv-color-bar-chart .logo {
     float:none;
-    height:85px;
+    height:60px;
     width:260px;
     background-color:#000;
     color:#fff;
     padding-top:35px;
 }
-.nutv-color-bar-chart .logo h2, .nutv-color-bar-chart .logo h3 {
+.nutv-color-bar-chart .logo h2 {
     margin:0;
     font-weight:normal;
     text-transform:uppercase;
     text-align:center;
-}
-.nutv-color-bar-chart .logo h2 {
-    font-size:33px;
+    font-size:36px;
     letter-spacing: 12px;
-}
-
-.nutv-color-bar-chart .logo h3 {
-    color: #fff;
-    margin-top:4px;
-    font-size:12px;
-    letter-spacing: 2px;
 }
 
 .show-description {
