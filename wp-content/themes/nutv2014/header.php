@@ -52,7 +52,6 @@
                     <span class="clear block"></span>
                     <div class="logo">
                         <h2>nutv.ca</h2>
-                        <h3>New University Television</h3>
                     </div>
                     <div class="green"></div>
                     <div class="light-green"></div>
