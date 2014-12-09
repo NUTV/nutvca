@@ -359,19 +359,17 @@ div.member-list p {
 .nutv-color-bar-chart .orange {background-color:#f7a446;}
 .nutv-color-bar-chart .logo {
     float:none;
-    height:60px;
+    height:65px;
     width:260px;
     background-color:#000;
-    color:#fff;
-    padding-top:35px;
+    overflow: hidden;
+    background-image: url('img/logo.png');
 }
 .nutv-color-bar-chart .logo h2 {
-    margin:0;
-    font-weight:normal;
-    text-transform:uppercase;
-    text-align:center;
-    font-size:36px;
-    letter-spacing: 12px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color:#000;
 }
 
 .show-description {
