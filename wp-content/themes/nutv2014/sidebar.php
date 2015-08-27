@@ -17,9 +17,8 @@
 	</section>
 
     <section class="show-description">
-        <h2 class="secondary-title">NUTV’s programming</h2>
-        awakens and engages the campus community while
-        fostering innovation and learning in an accessible media arts environment.
+        <h2 class="secondary-title">NUTV explores</h2>
+        media arts through learning, creativity and fun, capturing stories for the campus community. Learn &lt;-&gt; Create &lt;-&gt; Share!
     </section>
 
 </aside>
